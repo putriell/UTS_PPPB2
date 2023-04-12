@@ -39,8 +39,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mTextSensorLight = findViewById(R.id.label_light);
-        mTextSensorTemperature = findViewById(R.id.label_temperature);
-        mIndikatorTemperature = findViewById(R.id.indikator_temperature);
+
         mTextSensorGrafity = findViewById(R.id.label_gravity);
         cardtemp = findViewById(R.id.card_temperature);
 
@@ -54,18 +53,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (mSensorLight == null){
             mTextSensorLight.setText(sensor_error);
         }
-        if (mSensorTemperature == null){
-            mTextSensorTemperature.setText(sensor_error);
-        }
+
         if (mSensorGrafity == null){
             mTextSensorGrafity.setText(sensor_error);
         }
-//        cardtemp.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, Activity_fragment.class);
-//            }
-//        });
+        cardtemp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Activity_fragment.class);
+                startActivity(intent);
+            }
+        });
 
     }
     @Override
@@ -76,12 +74,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-    //
-//    public void P1_bay(View view){
-//        Intent to_maps = new Intent(Intent.getIntent(activity_maps)
-//        Toast.makeText(this, "Ke maps", Toast.LENGTH_SHORT).show();
-//    }
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -89,10 +81,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             mSensorManager.registerListener(this, mSensorLight,
                     SensorManager.SENSOR_DELAY_NORMAL);
         }
-        if (mSensorTemperature != null) {
-            mSensorManager.registerListener(this, mSensorTemperature,
-                    SensorManager.SENSOR_DELAY_NORMAL);
-        }
+
         if (mSensorGrafity!= null){
             mSensorManager.registerListener(this, mSensorGrafity,
                     SensorManager.SENSOR_DELAY_NORMAL);
@@ -118,12 +107,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 );
                 changeCardColor(currentValue);
                 break;
-            case Sensor.TYPE_AMBIENT_TEMPERATURE:
-                mTextSensorTemperature.setText(
-                        String.format("%1$.2f", currentValue)
-                );
-                changelabelstring(currentValue);
-                break;
+
 
             case Sensor.TYPE_GRAVITY:
                 mTextSensorGrafity.setText(
@@ -141,15 +125,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-    private void changelabelstring (float currentValue){
-        if (currentValue <= 15 ){
-            mIndikatorTemperature.setText("Hujan");
-        }
 
-        if (currentValue >= 16){
-            mIndikatorTemperature.setText("Cerah");
-        }
-    }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {

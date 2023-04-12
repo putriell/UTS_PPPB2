@@ -7,7 +7,7 @@
     <string name="add_widget">Add widget</string>
     <string name="dasboard"> Dasboard </string>
     <string name="update"> Last update : now</string>
-    <string name="weather"> Weather </string>
+    <string name="fragment"> Login to fragment </string>
     <string name="gravity"> Gravity </string>
     <string name="light"> Light </string>
     <string name="status"> Status</string>
@@ -15,4 +15,14 @@
     <string name="widget_update_label">Last Update</string>
     <string name="widget_button_update"> Update noww </string>
     <string name="humidity">Humidity</string>
+    <string name="weather">Weather</string>
+    <string name="page1">Page 1</string>
+    <string name="page2">Page 2</string>
+    <string name="input1">Input data page 1 to send page 2</string>
+    <string name="input2">Input data page 2 to send page 1</string>
+    <string name="Button1">Send to Page 2</string>
+    <string name="Button2">Send to Page 1</string>
+    <string name="fragment1">PAGE 1</string>
+    <string name="fragment2">PAGE 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

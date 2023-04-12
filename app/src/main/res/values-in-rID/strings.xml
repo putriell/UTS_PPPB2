@@ -16,4 +16,13 @@
     <string name="widget_update_label">Update terakhir</string>
     <string name="widget_button_update">Update sekarang</string>
     <string name="gravity">Gravitasi</string>
+    <string name="fragment">Masuk ke fragment</string>
+    <string name="page1">Halaman 1</string>
+    <string name="page2">Halaman 2</string>
+    <string name="input1">Masukann data halaman 1 untuk mengirim ke halaman 2</string>
+    <string name="input2">Masukan data halaman 2 untuk mengirim ke halaman 2</string>
+    <string name="Button1">Kirim ke halaman 2</string>
+    <string name="Button2">Kirim ke halaman 1</string>
+    <string name="fragment1"> HALAMAN 1</string>
+    <string name="fragment2">HALAMAN 2</string>
 </resources>

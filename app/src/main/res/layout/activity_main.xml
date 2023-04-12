@@ -11,7 +11,7 @@
         android:id="@+id/navbar"
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        app:cardBackgroundColor="@color/coklat">
+        app:cardBackgroundColor="@color/chocho">
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,42 +54,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="35dp"
-                android:text="@string/weather"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/fragment"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/indikator_temperature"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="cerah"
-                android:textColor="@color/black"
-                android:textSize="35dp"
-                android:layout_marginTop="65dp"
-                android:layout_marginLeft="34dp"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:id="@+id/label_temperature"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="%1$.2f"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginLeft="144dp"
-                android:textStyle="bold"
-                />
-
-            <ImageView
-                android:layout_width="124dp"
-                android:layout_height="90dp"
-                android:layout_marginLeft="210dp"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/cloud" />
+                android:textSize="30dp" />
 
 
         </androidx.cardview.widget.CardView>

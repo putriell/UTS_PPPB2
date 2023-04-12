@@ -1,36 +1,25 @@
 package com.example.uts_papb2;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.TextView;
-
+import com.example.uts_papb2.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.example.uts_papb2.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.model.PointOfInterest;
 
 import java.util.Locale;
@@ -74,10 +63,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng myLocation = new LatLng(-7.7705434,110.3705049);
+        mMap.addMarker(new MarkerOptions().position(myLocation).title("Marker in my home"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
 
         setMapOnClick(mMap);
         setPoiClicked(mMap);
