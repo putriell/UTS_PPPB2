@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UTS_PAPB2</string>
+    <string name="dasboard">Dashboard</string>
+    <string name="update">Update terakhir: baru saja</string>
+    <string name="weather">Cuaca</string>
+    <string name="humidity">Kelembapan</string>
+    <string name="light">Cahaya</string>
+    <string name="status">Status</string>
+    <string name="alert">Lihat Lokasi anda</string>
+    <string name="first_fragment_label">Fragment pertama</string>
+    <string name="second_fragment_label">Fragment Kedua</string>
+    <string name="app_widget_description">Ini merupakan deskripsi widget</string>
+    <string name="appwidget_text">Record track</string>
+    <string name="add_widget">tambahkan widget</string>
+    <string name="widget_update_label">Update terakhir</string>
+    <string name="widget_button_update">Update sekarang</string>
+    <string name="gravity">Gravitasi</string>
+</resources>

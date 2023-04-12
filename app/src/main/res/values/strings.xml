@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UTS_PAPB2</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="appwidget_text">Record Track</string>
+    <string name="add_widget">Add widget</string>
+    <string name="dasboard"> Dasboard </string>
+    <string name="update"> Last update : now</string>
+    <string name="weather"> Weather </string>
+    <string name="gravity"> Gravity </string>
+    <string name="light"> Light </string>
+    <string name="status"> Status</string>
+    <string name="alert">" See your location"</string>
+    <string name="widget_update_label">Last Update</string>
+    <string name="widget_button_update"> Update noww </string>
+    <string name="humidity">Humidity</string>
+</resources>
